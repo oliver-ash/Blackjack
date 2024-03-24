@@ -17,3 +17,22 @@
 - V2 betting
 - V3 card counting
 - V4 declare ace 11 or 1
+## Progress
+
+## Next Steps
+- ~~Add to Github~~
+- ~~While loop for playing the game~~
+- ~~Write game logic~~
+- Prettifying results
+- Clean up code, make more elegant, put all card dealing in a function, def initial_deal(), clean up elifs, add comments
+- Write out in ReadMe what the results of any possible scenario would be: this would be the outline for testing
+- Handle edge cases
+- Create functions for receiving and validating input
+- ASCII art cards
+- Allowing the game to go multiple rounds
+- STRETCH: have a button or input that counts cards and suggests actions, explains why
+- STRETCH: betting
+
+## Further learning
+- Understand what's happening with the requests http request: how do things talk to eachother (http)
+- Build a simple (http) net server

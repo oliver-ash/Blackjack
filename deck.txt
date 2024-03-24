@@ -1,1 +1,260 @@
-[{'suit': 'Spades', 'card_face': '2', 'value': 2}, {'suit': 'Spades', 'card_face': '3', 'value': 3}, {'suit': 'Spades', 'card_face': '4', 'value': 4}, {'suit': 'Spades', 'card_face': '5', 'value': 5}, {'suit': 'Spades', 'card_face': '6', 'value': 6}, {'suit': 'Spades', 'card_face': '7', 'value': 7}, {'suit': 'Spades', 'card_face': '8', 'value': 8}, {'suit': 'Spades', 'card_face': '9', 'value': 9}, {'suit': 'Spades', 'card_face': '10', 'value': 10}, {'suit': 'Spades', 'card_face': 'Ace', 'value': 11}, {'suit': 'Spades', 'card_face': 'Jack', 'value': 10}, {'suit': 'Spades', 'card_face': 'Queen', 'value': 10}, {'suit': 'Spades', 'card_face': 'King', 'value': 10}, {'suit': 'Hearts', 'card_face': '2', 'value': 2}, {'suit': 'Hearts', 'card_face': '3', 'value': 3}, {'suit': 'Hearts', 'card_face': '4', 'value': 4}, {'suit': 'Hearts', 'card_face': '5', 'value': 5}, {'suit': 'Hearts', 'card_face': '6', 'value': 6}, {'suit': 'Hearts', 'card_face': '7', 'value': 7}, {'suit': 'Hearts', 'card_face': '8', 'value': 8}, {'suit': 'Hearts', 'card_face': '9', 'value': 9}, {'suit': 'Hearts', 'card_face': '10', 'value': 10}, {'suit': 'Hearts', 'card_face': 'Ace', 'value': 11}, {'suit': 'Hearts', 'card_face': 'Jack', 'value': 10}, {'suit': 'Hearts', 'card_face': 'Queen', 'value': 10}, {'suit': 'Hearts', 'card_face': 'King', 'value': 10}, {'suit': 'Diamonds', 'card_face': '2', 'value': 2}, {'suit': 'Diamonds', 'card_face': '3', 'value': 3}, {'suit': 'Diamonds', 'card_face': '4', 'value': 4}, {'suit': 'Diamonds', 'card_face': '5', 'value': 5}, {'suit': 'Diamonds', 'card_face': '6', 'value': 6}, {'suit': 'Diamonds', 'card_face': '7', 'value': 7}, {'suit': 'Diamonds', 'card_face': '8', 'value': 8}, {'suit': 'Diamonds', 'card_face': '9', 'value': 9}, {'suit': 'Diamonds', 'card_face': '10', 'value': 10}, {'suit': 'Diamonds', 'card_face': 'Ace', 'value': 11}, {'suit': 'Diamonds', 'card_face': 'Jack', 'value': 10}, {'suit': 'Diamonds', 'card_face': 'Queen', 'value': 10}, {'suit': 'Diamonds', 'card_face': 'King', 'value': 10}, {'suit': 'Clubs', 'card_face': '2', 'value': 2}, {'suit': 'Clubs', 'card_face': '3', 'value': 3}, {'suit': 'Clubs', 'card_face': '4', 'value': 4}, {'suit': 'Clubs', 'card_face': '5', 'value': 5}, {'suit': 'Clubs', 'card_face': '6', 'value': 6}, {'suit': 'Clubs', 'card_face': '7', 'value': 7}, {'suit': 'Clubs', 'card_face': '8', 'value': 8}, {'suit': 'Clubs', 'card_face': '9', 'value': 9}, {'suit': 'Clubs', 'card_face': '10', 'value': 10}, {'suit': 'Clubs', 'card_face': 'Ace', 'value': 11}, {'suit': 'Clubs', 'card_face': 'Jack', 'value': 10}, {'suit': 'Clubs', 'card_face': 'Queen', 'value': 10}, {'suit': 'Clubs', 'card_face': 'King', 'value': 10}]
+[{
+    'suit': 'Spades'
+ 'card_face': '2'
+ 'value': 2
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '3'
+ 'value': 3
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '4'
+ 'value': 4
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '5'
+ 'value': 5
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '6'
+ 'value': 6
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '7'
+ 'value': 7
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '8'
+ 'value': 8
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '9'
+ 'value': 9
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': '10'
+ 'value': 10
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': 'Ace'
+ 'value': 11
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': 'Jack'
+ 'value': 10
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': 'Queen'
+ 'value': 10
+ }
+ {
+    'suit': 'Spades'
+ 'card_face': 'King'
+ 'value': 10
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '2'
+ 'value': 2
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '3'
+ 'value': 3
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '4'
+ 'value': 4
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '5'
+ 'value': 5
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '6'
+ 'value': 6
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '7'
+ 'value': 7
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '8'
+ 'value': 8
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '9'
+ 'value': 9
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': '10'
+ 'value': 10
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': 'Ace'
+ 'value': 11
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': 'Jack'
+ 'value': 10
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': 'Queen'
+ 'value': 10
+ }
+ {
+    'suit': 'Hearts'
+ 'card_face': 'King'
+ 'value': 10
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '2'
+ 'value': 2
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '3'
+ 'value': 3
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '4'
+ 'value': 4
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '5'
+ 'value': 5
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '6'
+ 'value': 6
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '7'
+ 'value': 7
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '8'
+ 'value': 8
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '9'
+ 'value': 9
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': '10'
+ 'value': 10
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': 'Ace'
+ 'value': 11
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': 'Jack'
+ 'value': 10
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': 'Queen'
+ 'value': 10
+ }
+ {
+    'suit': 'Diamonds'
+ 'card_face': 'King'
+ 'value': 10
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '2'
+ 'value': 2
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '3'
+ 'value': 3
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '4'
+ 'value': 4
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '5'
+ 'value': 5
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '6'
+ 'value': 6
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '7'
+ 'value': 7
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '8'
+ 'value': 8
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '9'
+ 'value': 9
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': '10'
+ 'value': 10
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': 'Ace'
+ 'value': 11
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': 'Jack'
+ 'value': 10
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': 'Queen'
+ 'value': 10
+ }
+ {
+    'suit': 'Clubs'
+ 'card_face': 'King'
+ 'value': 10
+ }]
