@@ -1,4 +1,7 @@
-def print_card(suit, card_name):
+def print_card(card):
+    suit = card['suit']
+    card_name = card['card_face']
+
     suit_symbol_dict = {
         "Hearts": '♥',
         "Diamonds": '♦',
@@ -23,6 +26,5 @@ def print_card(suit, card_name):
 
 
 # Example usage:
-print_card('Spades', '2')
 
 # TODO: print denomination X suit-icon

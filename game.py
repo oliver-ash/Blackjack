@@ -1,6 +1,8 @@
 import requests
 import sys
 
+from cardPrinter import print_card
+
 # Create a list of dictionaries for deck 2-14 each suit
 denom_dict = {
 '2': '2',
@@ -59,7 +61,7 @@ def create_playing_deck(n=1): # n = number of decks
             deck.append(card)
     return deck
 
-def deal_card_from_deck(deck):
+def draw_card_from_deck(deck):
     # Generate a truly random number
     # Remove card from the deck, deck is mutated (if deck is printed line after, deck is changed)
     card = deck.pop(generate_true_random(1, len(deck)-1))
@@ -67,7 +69,7 @@ def deal_card_from_deck(deck):
 
 # new_deck = create_playing_deck()
 
-# new_card = deal_card_from_deck(new_deck)
+# new_card = draw_card_from_deck(new_deck)
 # print(new_card)
 
 # if new_card in new_deck:
@@ -84,13 +86,11 @@ def setup():
     else:
         sys.exit(0)
 
-def determine_outcome(deck, your_cards, dealer_cards):
-    dealer_points = totaler(dealer_cards)
-    your_points = totaler(your_cards)
+def determine_outcome(deck, your_hand, dealer_hand, dealer_points, your_points):
     # If dealer's total 16 or below, must hit
     if dealer_points <= 16:
-        dealer_cards.append(deal_card_from_deck(deck))
-        dealer_points = totaler(dealer_cards)
+        dealer_hand.append(draw_card_from_deck(deck))
+        dealer_points = totaler(dealer_hand)
 
     # If dealer's total 17 or over, must stand
 
@@ -105,7 +105,7 @@ def determine_outcome(deck, your_cards, dealer_cards):
         print('You win!')
     elif dealer_points > your_points:
         print('Dealer wins!')
-    print('Your cards: ', your_cards, 'Dealer cards: ', dealer_cards)
+    show_table(your_hand, dealer_hand)
     print('Final_points: ','Your points: ', your_points, 'Dealer points: ', dealer_points)
 
     #_point X >_point Y = X wins
@@ -116,40 +116,68 @@ def totaler(hand):
         points += card['value']
     return points
 
+def deal_card_to_player(hand, deck, hidden=False):
+    if hidden == False:
+        hand.append(draw_card_from_deck(deck))
+    else:
+        hidden_card = draw_card_from_deck(deck)
+        hidden_card['is_hidden'] = True
+        hand.append(hidden_card)
+
+def initial_deal(deck, dealer_hand, your_hand):
+    deal_card_to_player(dealer_hand, deck, hidden=True)
+    deal_card_to_player(dealer_hand, deck, hidden=False)
+
+    deal_card_to_player(your_hand, deck)
+    deal_card_to_player(your_hand, deck)
+
+def show_table(your_hand, dealer_hand):
+    print('Your hand: ')
+    for card in your_hand:
+        print_card(card)
+    print('Dealer hand: ')
+    for card in dealer_hand:
+        print_card(card)
 
 
 def play_game():
     game_running = True
     deck = create_playing_deck()
-    dealer_cards = []
-    your_cards = []
+    dealer_hand = []
+    your_hand = []
+    dealer_points = 0
+    your_points = 0
+    
     while game_running == True:
         print("I'm playing the game!")
         print('Dealer deals cards: ')
-        hidden_card = deal_card_from_deck(deck)
-        hidden_card['is_hidden'] = True
-        dealer_cards.append(hidden_card)
-        dealer_cards.append(deal_card_from_deck(deck))
+        initial_deal(deck, dealer_hand, your_hand)
+        
+        your_points = totaler(your_hand)
+        show_table(your_hand, dealer_hand)
+        if your_points < 21:
+            hit = int(input('Stand (0) or Hit? (1)'))
 
-        print(f'Dealer cards: {dealer_cards}')
+            while hit == 1 and your_points < 21:
+                print('You chose hit.')
+                deal_card_to_player(your_hand, deck)
+                your_points = totaler(your_hand)
+                show_table(your_hand, dealer_hand)
+                if your_points > 21:
+                    break
+                hit = int(input('Stand (0) or Hit again? (1)'))
 
-        your_cards.append(deal_card_from_deck(deck))
-        your_cards.append(deal_card_from_deck(deck))
-        print(f'Your cards: {your_cards}')
-        hit = int(input('Stand (0) or Hit? (1)'))
-        if hit:
-            print('You chose hit.')
-            your_cards.append(deal_card_from_deck(deck))
-        else:
-            print('You chose stand.')
+            if hit == 0:
+                print('You chose stand.')
+
         # Dealer hidden card is flipped up
-        print(f'Your cards{your_cards}')
-        for card in dealer_cards:
+        for card in dealer_hand:
             if 'is_hidden' in card:
                 del card['is_hidden']
-
-        determine_outcome(deck, your_cards, dealer_cards)
+        dealer_points = totaler(dealer_hand)
+        determine_outcome(deck, your_hand, dealer_hand, dealer_points, your_points)
 
         game_running = False
+
 
 setup()
