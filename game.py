@@ -2,6 +2,7 @@ import requests
 import sys
 
 from cardPrinter import print_card
+from cardPrinter import print_hand
 
 # Create a list of dictionaries for deck 2-14 each suit
 denom_dict = {
@@ -133,11 +134,9 @@ def initial_deal(deck, dealer_hand, your_hand):
 
 def show_table(your_hand, dealer_hand):
     print('Your hand: ')
-    for card in your_hand:
-        print_card(card)
+    print_hand(your_hand)
     print('Dealer hand: ')
-    for card in dealer_hand:
-        print_card(card)
+    print_hand(dealer_hand)
 
 
 def play_game():
@@ -180,4 +179,4 @@ def play_game():
         game_running = False
 
 
-setup()
+# setup()

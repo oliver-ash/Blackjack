@@ -23,15 +23,21 @@
 - ~~Add to Github~~
 - ~~While loop for playing the game~~
 - ~~Write game logic~~
-- Prettifying results
-- Clean up code, make more elegant, put all card dealing in a function, def initial_deal(), clean up elifs, add comments
-- Write out in ReadMe what the results of any possible scenario would be: this would be the outline for testing
+- Prettifying results - good start
+- ~~Clean up code, make more elegant, put all card dealing in a function, def initial_deal(),~~
+- clean up elifs, add comments
+- ~~Write out in ReadMe what the results of any possible scenario would be: this would be the outline for testing~~
 - Handle edge cases
+    - Dealer starts at 21, dealer wins
 - Create functions for receiving and validating input
-- ASCII art cards
+- ~~ASCII art cards~~
+- Show whole hand of cards on one line
 - Allowing the game to go multiple rounds
-- STRETCH: have a button or input that counts cards and suggests actions, explains why
+- Make spacing and height and width of cards adjustable with string multiplication
+- Hide 1 dealer card
+- STRETCH: Count Cards: have a button or input that counts cards and suggests actions, explains why
 - STRETCH: betting
+- 
 
 ## Further learning
 - Understand what's happening with the requests http request: how do things talk to eachother (http)
