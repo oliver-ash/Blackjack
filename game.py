@@ -179,4 +179,4 @@ def play_game():
         game_running = False
 
 
-# setup()
+setup()
