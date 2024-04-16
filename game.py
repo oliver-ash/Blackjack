@@ -93,8 +93,8 @@ def determine_outcome(deck, your_hand, dealer_hand, dealer_points, your_points):
         dealer_hand.append(draw_card_from_deck(deck))
         dealer_points = totaler(dealer_hand)
 
+    show_table(your_hand, dealer_hand)
     # If dealer's total 17 or over, must stand
-
     # If anyone goes over 21, they bust
     if dealer_points > 21 and your_points > 21:
         print('Tie!')
@@ -106,7 +106,7 @@ def determine_outcome(deck, your_hand, dealer_hand, dealer_points, your_points):
         print('You win!')
     elif dealer_points > your_points:
         print('Dealer wins!')
-    show_table(your_hand, dealer_hand)
+
     print('Final_points: ','Your points: ', your_points, 'Dealer points: ', dealer_points)
 
     #_point X >_point Y = X wins
@@ -176,7 +176,22 @@ def play_game():
         dealer_points = totaler(dealer_hand)
         determine_outcome(deck, your_hand, dealer_hand, dealer_points, your_points)
 
-        game_running = False
+        continuance = int(input('Quit (0) or play again (1)?'))
+        if continuance == 1:
+            play_game()
+        else:
+            game_running = False
+            break
+
 
 
 setup()
+
+
+# deck = create_playing_deck()
+# for card in deck:
+    # print(card['card_face'])
+    # if card['card_face'][0] == 1:
+    #     print(card)
+
+# print(deck)

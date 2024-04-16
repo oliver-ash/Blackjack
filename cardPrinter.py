@@ -47,9 +47,11 @@ def print_hand(hand, height = 2, width = 4): # Height is rows between each symbo
     for card in hand:
         if 'is_hidden' in card and card['is_hidden'] == True:
             card_name = '?'
-        else:
+        elif card['card_face'] == '10':
             card_name = card['card_face']
-        print(f'| {card_name[0]:<2}' + width*2 * ' ' + '|', end = ' ')
+        else:
+            card_name = card['card_face'][0]
+        print(f'| {card_name:<2}' + width*2 * ' ' + '|', end = ' ')
     print('')
     height_counter = 0
     while height_counter < height:
@@ -70,9 +72,11 @@ def print_hand(hand, height = 2, width = 4): # Height is rows between each symbo
     for card in hand:
         if 'is_hidden' in card and card['is_hidden'] == True:
             card_name = '?'
-        else:
+        elif card['card_face'] == '10':
             card_name = card['card_face']
-        print('| ' + width*2 * ' ' + f'{card_name[0]:<2}|', end = ' ')
+        else:
+            card_name = card['card_face'][0]
+        print('| ' + width*2 * ' ' + f'{card_name:<2}|', end = ' ')
     print('')
     print(('└───' + width*2 * '─' + '┘ ') * n) 
     

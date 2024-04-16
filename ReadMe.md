@@ -23,7 +23,7 @@
 - ~~Add to Github~~
 - ~~While loop for playing the game~~
 - ~~Write game logic~~
-- Prettifying results - good start
+- ~~Prettifying results - good start~~
 - ~~Clean up code, make more elegant, put all card dealing in a function, def initial_deal(),~~
 - clean up elifs, add comments
 - ~~Write out in ReadMe what the results of any possible scenario would be: this would be the outline for testing~~
